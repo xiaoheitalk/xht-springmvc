@@ -23,7 +23,9 @@ public class WebXml extends AbstractAnnotationConfigDispatcherServletInitializer
       */
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[] {ApplicationContextXml.class};
+//        Class<?>[] clazz = {ApplicationContextXml.class};
+        Class<?>[] clazz = {AppBoot.class};
+        return clazz;
     }
 
     /*

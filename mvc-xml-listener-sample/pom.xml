@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xht.springmvc</groupId>
-    <artifactId>mvc-boot-sample</artifactId>
+    <artifactId>mvc-xml-listener-sample</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -65,12 +65,28 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                    <groupId>org.springframework.boot</groupId>
-                </exclusion>
-            </exclusions>
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>tomcat-embed-core</artifactId>-->
+<!--                    <groupId>org.apache.tomcat.embed</groupId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>tomcat-embed-el</artifactId>-->
+<!--                    <groupId>org.apache.tomcat.embed</groupId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>tomcat-embed-websocket</artifactId>-->
+<!--                    <groupId>org.apache.tomcat.embed</groupId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
         </dependency>
         <!--<dependency>
             <groupId>org.springframework</groupId>
@@ -96,13 +112,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>${spring.version}</version>
-        </dependency>-->
-        <!--springframework-->
+        </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>1.8.9</version>
-        </dependency>
+        </dependency>-->
+        <!--springframework-->
         <!--其他需要的包-->
         <dependency>
             <groupId>org.apache.commons</groupId>
